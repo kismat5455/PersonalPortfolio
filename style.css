@@ -37,6 +37,16 @@
     height: 55px;
 }
 
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+
 /* Styles for profile heading */
 #profile-heading {
     display: flex;
