@@ -1,0 +1,181 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styles */
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #becad6;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 11.5vh;
+    z-index: 1000;
+}
+
+/* Styles for navigation links */
+.nav-links {
+    display: flex;
+    margin: 10px;
+}
+
+.nav-links button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styles for profile picture */
+#profile-picture {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+/* Styles for profile heading */
+#profile-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Styles for buttons */
+.buttons {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.buttons:hover {
+    background-color: #0a8caaac;
+}
+
+/* Styles for blurred background image */
+#blurred-image {
+    background-image: url('images/coding-background-9izlympnd0ovmpli.jpg');
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    padding: 20px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    filter: blur(4px);
+    opacity: 0.9;
+}
+
+/* Styles for main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+/* Styles for header text */
+.header-text {
+    color: white;
+}
+
+/* Styles for introduction section */
+#intro {
+    opacity: 1;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #100d0d51;
+}
+
+#intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Styles for sections */
+section {
+    padding: 50px;
+}
+
+/* Styles for dropdown button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Styles for dropdown container */
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+/* Styles for dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Styles for dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Styles for dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+
+    /* Hide navigation links */
+    .nav-links {
+        display: none;
+    }
+
+    /* Show dropdown button */
+    .dropdown {
+        display: inline-block;
+    }
+}
