@@ -21,3 +21,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWriter();
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownContent = document.querySelector('.dropdown-content');
+
+  // Toggle dropdown on touch
+  dropdown.addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Close the dropdown when clicking outside of it
+  document.addEventListener('click', function(event) {
+    if (!dropdown.contains(event.target)) {
+      dropdownContent.style.display = 'none';
+    }
+  });
+
+  // Close the dropdown when touch ends outside of it
+  document.addEventListener('touchend', function(event) {
+    if (!dropdown.contains(event.target)) {
+      dropdownContent.style.display = 'none';
+    }
+  });
+});
