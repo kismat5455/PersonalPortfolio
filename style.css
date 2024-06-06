@@ -172,7 +172,7 @@ section {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown:active .dropdown-content {
     display: block;
 }
 
