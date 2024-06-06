@@ -22,22 +22,20 @@ document.addEventListener("DOMContentLoaded", function() {
     typeWriter();
 });
 
-function toggleDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+const elements = document.querySelectorAll('.hover-effect');
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
+elements.forEach((element) => {
+  // Add touchstart event listener
+  element.addEventListener('touchstart', () => {
+    element.classList.add('touch-hover-effect');
+  });
+
+  element.addEventListener('touchend', () => {
+    // Remove touch effect
+    element.classList.remove('touch-hover-effect');
+  });
+});
+
 
 
 
