@@ -23,6 +23,7 @@
 .nav-links {
     display: flex;
     margin: 10px;
+    gap: 11px;
 }
 
 .nav-links button a {
@@ -69,12 +70,18 @@
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
+    
     cursor: pointer;
     border-radius: 8px;
+
 }
 
+
+
 .buttons:hover {
-    background-color: #0a8caaac;
+    background-color: #aa0a47ac;
+    transform: scale(1.2);
+
 }
 
 /* Styles for blurred background image */
@@ -287,7 +294,7 @@ Portfolio styles End
 
 
     /* Show the dropdown menu on hover */
-    .dropdown:hover  .dropdown-content{
+    .dropdown:hover .dropdown-content {
         display: block;
     }
 

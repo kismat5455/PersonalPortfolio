@@ -29,20 +29,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Toggle dropdown on touch
   dropdown.addEventListener('touchstart', function(event) {
+    if(!dropdown.contains(dropdownContent)){
     event.preventDefault();
     dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-  });
+  }});
 
   // Close the dropdown when clicking outside of it
   document.addEventListener('click', function(event) {
-    if (!dropdown.contains(event.target)) {
+    if (!dropdown.contains(event.target) && !dropdown.contains(dropdownContent)) {
       dropdownContent.style.display = 'none';
     }
   });
 
   // Close the dropdown when touch ends outside of it
   document.addEventListener('touchend', function(event) {
-    if (!dropdown.contains(event.target)) {
+    if (!dropdown.contains(event.target) && !dropdown.contains(dropdownContent)) {
       dropdownContent.style.display = 'none';
     }
   });
