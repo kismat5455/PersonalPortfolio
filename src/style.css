@@ -31,6 +31,7 @@
     color: black;
 }
 
+
 /* Styles for profile picture */
 #profile-picture {
     border-radius: 50%;
@@ -70,7 +71,6 @@
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
-
     cursor: pointer;
     border-radius: 8px;
 
@@ -154,7 +154,7 @@ section {
 .dropdown {
     position: relative;
     display: none;
-    left:-40px;
+    left: -40px;
 }
 
 /* Styles for dropdown content */
@@ -175,10 +175,14 @@ section {
     display: block;
 }
 
+
+
 /* Styles for dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
+
+
 
 
 
@@ -270,6 +274,14 @@ Portfolio styles Start
 .showcase:nth-child(3) {
     animation-delay: 1.5s;
 }
+
+/* Styles for active navigation link */
+.nav-links .buttons a:active {
+    background-color: #000000;
+    color: white;
+
+}
+
 
 /**************************************************************************************************************** 
 Portfolio styles End
