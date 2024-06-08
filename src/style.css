@@ -81,8 +81,9 @@
 .buttons:hover {
     background-color: #aa0a47ac;
     transform: scale(1.2);
-
 }
+
+
 
 /* Styles for blurred background image */
 #blurred-image {
@@ -255,11 +256,13 @@ Portfolio styles Start
     0% {
         opacity: 0;
         transform: translateY(100px);
+
     }
 
     100% {
         opacity: 1;
         transform: translateY(0);
+
     }
 }
 
@@ -280,6 +283,34 @@ Portfolio styles Start
     background-color: #000000;
     color: white;
 
+}
+
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    background-color: #1e3a8a;
+}
+
+.card h2 {
+    transition: color 0.3s;
+}
+
+.card:hover h2 {
+    color: #fbbf24;
+}
+
+.card p {
+    transition: color 0.3s;
+}
+
+.card:hover p {
+    color: #e0f2fe;
 }
 
 
