@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This is where I showcase my projects, skills, 
 
 # Live Preview
 
-https://kismat5455.github.io/PersonalPortfolio/
+https://personal-portfolio-i7pc3m76y-kismat-alis-projects.vercel.app/
 
 ## Skills
 
