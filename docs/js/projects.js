@@ -1,6 +1,6 @@
 const repoList = document.getElementById('repo-list');
 
-// Function to fetch and display repository data with a delay
+
 const fetchRepoData = async () => {
   try {
     const response = await fetch('http://localhost:3000/repos');
