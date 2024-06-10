@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This is where I showcase my projects, skills, 
 
 # Live Preview
 
-https://personal-portfolio-i7pc3m76y-kismat-alis-projects.vercel.app/
+https://personal-portfolio-flame-one.vercel.app/
 
 ## Skills
 
