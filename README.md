@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This is where I showcase my projects, skills, 
 
 # Live Preview
 
-https://personal-portfolio-flame-one.vercel.app/
+https://kismat5455.github.io/PersonalPortfolio/
 
 ## Skills
 
