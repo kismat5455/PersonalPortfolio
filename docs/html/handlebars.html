@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favorite Movies</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+</head>
+
+<body>
+    <script id="movie-template" type="text/x-handlebars-template">
+    <h1>My Favorite Movies</h1>
+    <ul>
+      {{#each movies}}
+        <li>{{title}} - {{year}}</li>
+      {{/each}}
+    </ul>
+  </script>
+
+    <div id="content"></div>
+
+    <script>
+
+        const source = document.getElementById('movie-template').innerHTML;
+        const template = Handlebars.compile(source);
+
+        const data = {
+            movies: [
+                { title: "Inception", year: 2010 },
+                { title: "The Matrix", year: 1999 },
+                { title: "Interstellar", year: 2014 },
+                { title: "The Dark Knight", year: 2008 }
+            ]
+        };
+
+        const html = template(data);
+        document.getElementById('content').innerHTML = html;
+    </script>
+</body>
+
+</html>
