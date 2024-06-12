@@ -1,27 +1,29 @@
-const repoList = document.getElementById('repo-list');
-
+const repoList = document.getElementById("repo-list");
 
 const fetchRepoData = async () => {
   try {
-    const response = await fetch('http://localhost:3000/repos');
+    const response = await fetch("http://localhost:3001/repos");
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     const reposData = await response.json();
-   
+
     for (let i = 0; i < reposData.length; i++) {
       const repo = reposData[i];
 
-      await new Promise(resolve => setTimeout(resolve, 120)); 
+      await new Promise((resolve) => setTimeout(resolve, 120));
 
-      const { name, description, html_url, stargazers_count, forks_count } = repo;
+      const { name, description, html_url, stargazers_count, forks_count } =
+        repo;
 
       repoList.innerHTML += `
         <div class="bg-white rounded-lg shadow-md p-6 m-4 transition duration-300 hover:scale-105">
           <h3 class="text-xl font-semibold mb-2">${name}</h3>
-          <p class="description text-gray-600">${description || "No description available."}</p>
+          <p class="description text-gray-600">${
+            description || "No description available."
+          }</p>
           <p class="mt-2 text-sm text-gray-500">
             Stars: <span class="font-medium text-yellow-500">${stargazers_count}</span> |
             Forks: <span class="font-medium text-green-500">${forks_count}</span>
@@ -34,8 +36,8 @@ const fetchRepoData = async () => {
       `;
     }
   } catch (error) {
-    console.error('Error fetching repository data:', error);
-    repoList.innerHTML += '<div>Error fetching repository data.</div>';
+    console.error("Error fetching repository data:", error);
+    repoList.innerHTML += "<div>Error fetching repository data.</div>";
   }
 };
 
