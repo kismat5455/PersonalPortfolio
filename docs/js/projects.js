@@ -2,7 +2,9 @@ const repoList = document.getElementById("repo-list");
 
 const fetchRepoData = async () => {
   try {
-    const response = await fetch("http://localhost:3001/repos");
+    const response = await fetch(
+      "https://kismatpersonalportfolio.onrender.com/repos"
+    );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
