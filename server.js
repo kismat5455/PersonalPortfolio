@@ -11,7 +11,7 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 app.use(cors());
 
-app.use(express.static("../docs"));
+app.use(express.static("/docs"));
 
 app.get("/repos", (req, res) => {
   fetch("https://api.github.com/users/kismat5455/repos", {
