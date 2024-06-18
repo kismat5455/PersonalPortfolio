@@ -3,7 +3,7 @@ const repoList = document.getElementById("repo-list");
 const fetchRepoData = async () => {
   try {
     const response = await fetch(
-      "https://kismatpersonalportfolio.onrender.com/repos"
+      "https://personal-portfolio-7hvhi2y8j-kismat-alis-projects.vercel.app/repos"
     );
 
     if (!response.ok) {
